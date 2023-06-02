@@ -1,48 +1,79 @@
-<h1>Este es un sitio web con Github pages</h1>
-<p>Y fue creado con amor para el curso de Git y Github de Platzi</p>
-<form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Quicksand:wght@300;500;700&display=swap" rel="stylesheet">
+    <title>Document</title>
+    <style>
+        :root {
+            --very-light-pink: #c7c7c7;
+            --text-input-field: #f7f7f7;
+            --hospital-green: #acd9b2;
+            --white: #ffffff;
+            --black: #000000;
+            --sm: 14px;
+            --md: 16px;
+            --lg: 18px;            
+        }
+         
+        body {
+            margin: 0;
+            font-family: 'Quicksand', sans-serif;
+        }
+      </style>
+</head>
 
-<input type="hidden" name="oid" value="00D7Q00000D14BS"></input>
-<input type="hidden" name="retURL" value="dirtypaws2-dev-ed.develop.my.site.com/gracias/s"></input>
+<body>
+  <h1>Este es un sitio web con Github pages</h1>
+  <p>Y fue creado con amor para el curso de Git y Github de Platzi</p>
+  <form action="https://webto.salesforce.com/servlet/servlet.WebToLead?encoding=UTF-8" method="POST">
 
-<!--  ----------------------------------------------------------------------  -->
-<!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
-<!--  these lines if you wish to test in debug mode.                          -->
-<!--  <input type="hidden" name="debug" value=1>                              -->
-<!--  <input type="hidden" name="debugEmail"                                  -->
-<!--  value="cleofdezwfit@gmail.com">                                         -->
-<!--  ----------------------------------------------------------------------  -->
+  <input type="hidden" name="oid" value="00D7Q00000D14BS"></input>
+  <input type="hidden" name="retURL" value="dirtypaws2-dev-ed.develop.my.site.com/gracias/s"></input>
 
-<br><label for="first_name">Nombre</label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></br>
+  <!--  ----------------------------------------------------------------------  -->
+  <!--  NOTE: These fields are optional debugging elements. Please uncomment    -->
+  <!--  these lines if you wish to test in debug mode.                          -->
+  <!--  <input type="hidden" name="debug" value=1>                              -->
+  <!--  <input type="hidden" name="debugEmail"                                  -->
+  <!--  value="cleofdezwfit@gmail.com">                                         -->
+  <!--  ----------------------------------------------------------------------  -->
 
-<br><label for="last_name">Apellidos</label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></br>
+  <br><label for="first_name">Nombre </label><input  id="first_name" maxlength="40" name="first_name" size="20" type="text" /></br>
 
-<br><label for="mobile">Móvil</label><input  id="mobile" maxlength="9" name="mobile" size="20" type="text" /></br>
+  <br><label for="last_name">Apellidos </label><input  id="last_name" maxlength="80" name="last_name" size="20" type="text" /></br>
 
-<br><label for="email">Email</label><input  id="email" maxlength="80" name="email" size="20" type="text" /></br>
+  <br><label for="mobile">Móvil </label><input  id="mobile" maxlength="9" name="mobile" size="20" type="text" /></br>
 
-<br><label for="city">Ciudad</label><input  id="city" maxlength="40" name="city" size="20" type="text" /></br>
+  <br><label for="email">Email </label><input  id="email" maxlength="80" name="email" size="20" type="text" /></br>
 
-<br>Tipo de cliente:<select  id="00N7Q00000KUgeE" name="00N7Q00000KUgeE" title="Tipo de cliente"><option value="">--None--</option><option value="Particular">Particular</option>
-<option value="Empresa">Empresa</option>
-</select></br>
+  <br><label for="city">Ciudad </label><input  id="city" maxlength="40" name="city" size="20" type="text" /></br>
 
-<br><label for="company">Empresa</label><input  id="company" maxlength="40" name="company" size="20" type="text" /></br>
+  <br>Tipo de cliente <select  id="00N7Q00000KUgeE" name="00N7Q00000KUgeE" title="Tipo de cliente"><option value="">--None--</option><option value="Particular">Particular</option>
+  <option value="Empresa">Empresa</option>
+  </select></br>
 
-<br>Interés principal:<select  id="00N7Q00000KUgje" multiple="multiple" name="00N7Q00000KUgje" title="Interés principal"><option value="Servicios">Servicios</option>
-<option value="Productos">Productos</option>
-</select></br>
+  <br><label for="company">Empresa </label><input  id="company" maxlength="40" name="company" size="20" type="text" /></br>
 
-<br><label for="lead_source">¿Cómo nos conociste?</label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Evento">Evento</option>
-<option value="Feria">Feria</option>
-<option value="Web">Web</option>
-<option value="Phone Inquiry">Llamada telefónica</option>
-<option value="Partner Referral">Alguien me lo recomendó</option>
-<option value="Purchased List">Por nuestros productos</option>
-<option value="Other">Otros</option>
-</select></br>
+  <br>Interés principal (puedes seleccionar ambos) <select  id="00N7Q00000KUgje" multiple="multiple" name="00N7Q00000KUgje" title="Interés principal"><option value="Servicios">Servicios</option>
+  <option value="Productos">Productos</option>
+  </select></br>
 
-<input type="submit" name="submit"></input>
+  <br><label for="lead_source">¿Cómo nos conociste? </label><select  id="lead_source" name="lead_source"><option value="">--None--</option><option value="Evento">Evento</option>
+  <option value="Feria">Feria</option>
+  <option value="Web">Web</option>
+  <option value="Phone Inquiry">Llamada telefónica</option>
+  <option value="Partner Referral">Alguien me lo recomendó</option>
+  <option value="Purchased List">Por nuestros productos</option>
+  <option value="Other">Otros</option>
+  </select></br>
 
-</form>
-<p><img src="https://i.imgur.com/AAKyYUp.jpeg" width="50%" /></p>
+  <input type="submit" name="submit"></input>
+
+  </form>
+</body>
+</html>
